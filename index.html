@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventorylist</title>
+    <style>
+        body {
+            background-color: #909121;
+            color: #ffff;
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10rem;
+        }
+
+        form input[type='text'] ,[type='button'] {
+            height: 30px;
+            width: 45;
+            border-radius: 7px;
+            border-color: #ffff;
+
+
+        }
+    form input[type = "button"]{
+            margin-left: 14px;
+            height: 35px;
+            width: 70px;
+    }
+    h1,p{
+    font-family: system-ui;
+     text-align: center;
+     margin-top: 34px;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Simple Inventory Mangement</h1>
+    <p>using local storage</p>
+    <form id="formSubmit">
+        <input type="text" id="addItem" required />
+        <input type="submit" name="addItem" value="ADD" id="additembtn">
+    </form >
+
+    <div>
+        <div id="itemList">
+
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
